@@ -1,4 +1,4 @@
-# Alert System, the origin of the deadhand
+# Deadhand
 
 A containerized application that handles user authentication, SMS alerts, and email follow-ups. The system allows users to create time-sensitive alerts that require responses within a specified timeframe. If no response is received, the system automatically sends follow-up emails.
 
@@ -43,8 +43,8 @@ EMAIL_PASSWORD=your-app-specific-password
 3. Build and run the Docker container:
 
 ```bash
-docker build -t alert-system .
-docker run -p 5000:5000 --env-file .env alert-system
+docker build -t deadhand .
+docker run -p 5000:5000 --env-file .env deadhand
 ```
 
 4. Access the application at `http://localhost:5000`
